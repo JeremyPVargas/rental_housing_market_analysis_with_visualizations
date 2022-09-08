@@ -13,11 +13,8 @@
     <li>
       <a href="#technologies">Technologies</a>
       <ul>
-        <li><a href="#json">Json</a></li>
-        <li><a href="#alpaca">Alpaca</a></li>
-        <li><a href="#requests">Requests</a></li>
-        <li><a href="#os">os</a></li>
-        <li><a href="#mcforecasttools">MCForecastTools</a></li>
+       
+        <li><a href="#hvplot">hvplot</a></li>
         <li><a href="#pandas">Pandas</a></li>
         <li><a href="#matplotlib">Matplotlib</a></li>
       </ul>
@@ -41,20 +38,22 @@ This tool runs on a Jupyter notebook. It is designed to analyze and visualize re
 The data analyzed is representative of the neighborhoods in San Francisco from the years 2010 to 2016.
 
 ### Inputs and APIs
-The application reads financial performance data from one file. Data is used to conduct futher analysis of the funds in comparision to the S&P 500, which is also included in the original Data Frame.
+The application analyzes housing price data from one file. Data is used to conduct futher analysis using Gross Rent, and the Price per square foot accross the neighborhoods of San Francisco.
 
-    MC ForecastTools.py
-
-    Alpaca API
+    housing_per_year.csv
+    neighborhoods_coordinates.csv
+    sfo_neighborhoods_census_data.csv
 
   
 ### Outputs
     Visualizations:
-    - Portfolio assets
-    - Portfolio performance over x trading days based on Monte Carlo Simulations.
-    - Distribution of portfolio's Final Cumulative Returns accross simulations.
+    - Housing Units per Year
+    - Price per SqFt and Gross Rent
+    - Geovisualizion of Gross Rent.
     Statistical analysis methods: 
-    - 95% Confidence interval including upper and lower confidience intervals.
+    - Mean
+    - Max
+    - Min
     
 ---
 <!--Technologies -->
@@ -66,7 +65,7 @@ The application reads financial performance data from one file. Data is used to 
 ## Libraries and Dependencies
 
 ### hvplot
-[hvplot](https://alpaca.markets/docs/api-references/market-data-api/)
+[hvplot](https://pypi.org/project/hvplot/)
 
 ### Pandas
 [Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) 
@@ -100,21 +99,21 @@ The application reads financial performance data from one file. Data is used to 
 <!--Usage -->
 ## Usage
 
-### Portfolio performance data - sample:
+### Housing Price Data - sample:
 
-![portfolio](./images/portfolio.png)
-
-
-
-### Visualization of Monte Carlo histogram -sample:
-
-![montecarlo1](./images/5-4-monte-carlo-histogram.png)
+![sf_table](./images/sf_table_saleprice_housing_year.png)
 
 
 
-### Visualization of Monte Carlo simulation over x trading days- sample:
+### Visualization of Avg Sale Price per SqFt and Gross Rent -sample:
 
-![montecarlo2](./images/5-4-monte-carlo-line-plot.png)
+![avg_sales](./images/sf_pricesqft_rent.png)
+
+
+
+### Visualization Gross Rent in San Fancisco with Geodata- sample:
+
+![geodata](./images/geodata.png)
 
 
 ---
