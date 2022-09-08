@@ -1,4 +1,5 @@
 # Rental Housing Market Analysis with Visualization Tool
+
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -13,7 +14,6 @@
     <li>
       <a href="#technologies">Technologies</a>
       <ul>
-       
         <li><a href="#hvplot">hvplot</a></li>
         <li><a href="#pandas">Pandas</a></li>
         <li><a href="#matplotlib">Matplotlib</a></li>
